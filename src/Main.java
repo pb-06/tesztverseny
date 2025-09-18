@@ -12,6 +12,8 @@ public class Main {
 
         System.out.println("1. feladat: Az adatok beolvasása");
         handler.readFile("valaszok.txt");
+        System.out.println();
+
         debugger();
 
     }
