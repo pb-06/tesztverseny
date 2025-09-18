@@ -92,4 +92,12 @@ public class TesztversenyHandler {
         result[1] = result[0] / getValaszokDb() * 100.0;
         return result;
     }
+
+    public void calculatePoints() {
+
+    }
+
+    public void pointsToFile(String filename) {
+
+    }
 }

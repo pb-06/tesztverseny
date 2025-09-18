@@ -37,6 +37,11 @@ public class Main {
                 +Math.round(helyesFeladatStat[1] *100.0)/100.0+"%-a adott helyes\n" +
                 "választ.");
 
+        System.out.println("6. feladat: A versenyzők pontszámának meghatározása");
+        handler.calculatePoints();
+        handler.pointsToFile("pontok.txt");
+        System.out.println();
+
         debugger();
     }
 }
