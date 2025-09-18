@@ -153,5 +153,15 @@ public class TesztversenyHandler {
                 System.out.println("1. díj ("+points1+" pont): "+valaszok[i][0]);
             }
         }
+        for (int i=0; i<getValaszokDb(); i++) {
+            if (Integer.parseInt(valaszok[i][2])==points2) {
+                System.out.println("2. díj ("+points1+" pont): "+valaszok[i][0]);
+            }
+        }
+        for (int i=0; i<getValaszokDb(); i++) {
+            if (Integer.parseInt(valaszok[i][2])==points3) {
+                System.out.println("3. díj ("+points1+" pont): "+valaszok[i][0]);
+            }
+        }
     }
 }
