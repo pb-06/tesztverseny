@@ -25,7 +25,14 @@ public class Main {
         System.out.println(valaszai+"   (a versenyző válasza)");
         System.out.println();
 
-        debugger();
+        System.out.println("4. feladat:");
+        System.out.println(handler.getHelyes()+"   (a helyes megoldás)");
+        System.out.println(handler.eltalaltaStr(valaszai)+"   (a versenyző helyes válaszai)");
+        System.out.println();
 
+        System.out.println("5. feladat: A feladat sorszáma = ");
+        int feladatSorszam = Integer.parseInt(in.nextLine());
+
+        debugger();
     }
 }
