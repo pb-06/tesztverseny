@@ -1,5 +1,6 @@
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.util.Objects;
 import java.util.Scanner;
 
 public class TesztversenyHandler {
@@ -56,5 +57,15 @@ public class TesztversenyHandler {
         debugger();
 
         return this;
+    }
+
+    public String valaszai(String azon) {
+        for (int i=0; i<getValaszokDb(); i++) {
+            if (Objects.equals(valaszok[i][0], azon)) {
+                return valaszok[i][1];
+            }
+        }
+
+        return null;
     }
 }
